@@ -29,7 +29,7 @@ export const config  = {
         // 支持字符串形式(单个API地址)或数组形式(多个备选API地址)
         // 多个地址时，会按顺序检测可用性，并使用第一个可用的地址
         staticBaseUrl: [
-            'https://autht.ilovecncslovetyloolovejeelovedanking.sbs/api/v1',
+            'https://dashboard.onestep.lat/api/v1',
         ],
       
         // 自动获取模式配置 (urlMode = 'auto'时使用)
@@ -64,10 +64,10 @@ export const config  = {
 
     // ====================  网站基础配置  ====================
     SITE_CONFIG: {
-        siteName: 'One Step',
-        siteDescription: 'Only one step!',
+        siteName: '美团修车',
+        siteDescription: '专为出击打造，支持您打桩顺利！',
         // copyright会自动使用当前年份
-        copyright: `© ${new Date().getFullYear()} One Step. All Rights Reserved.`,
+        copyright: `© ${new Date().getFullYear()} 美团修车. All Rights Reserved.`,
 
         // 是否显示标题中的网站Logo (true=显示, false=隐藏)
         showLogo: true,
@@ -99,7 +99,7 @@ export const config  = {
         defaultTheme: 'light',
 
         // 主题色 (16进制颜色值)
-        primaryColor: '#355cc2',
+        primaryColor: '#FFFF00',
 
         // 是否启用落地页 (true=启用, false=禁用)
         enableLandingPage: true // 默认启用
@@ -122,19 +122,19 @@ export const config  = {
         // 认证页面弹窗公告配置
         popup: {
             // 是否启用弹窗
-            enabled: false,
+            enabled: true,
 
             // 弹窗标题
-            title: "用户须知 (可自定义开启)",
+            title: "欢迎光临美团修车！",
 
             // 弹窗内容 (支持HTML)
-            content: "<p><strong>欢迎使用我们的服务！</strong></p><p>请注意以下事项：</p><ul><li>请妥善保管您的账号信息</li><li>如有问题请联系客服</li></ul>",
+            content: "<p><strong>欢迎使用我们的服务！</strong></p><p>专为出击打造，支持您打桩顺利</p>",
 
             // 冷却时间（小时），在此时间内不会再次显示弹窗
             cooldownHours: 0,
 
             // 等待时间（秒），用户需要等待多少秒才能关闭弹窗，设为0表示无需等待
-            closeWaitSeconds: 3
+            closeWaitSeconds: 0
         }
     },
 
@@ -267,7 +267,7 @@ export const config  = {
     // 客户端下载配置
     CLIENT_CONFIG: {
         // 整个下载卡片显示控制
-        showDownloadCard: true,
+        showDownloadCard: false,
 
         // 平台显示控制 (true=显示, false=隐藏)
         showIOS: true,
